@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Expediente</title>
+    <script src="https://kit.fontawesome.com/7dda71d877.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <main>
+    <!-- Login Form  -->
+    <div class="loginWrapper">
+        <div class="loginContein">
+            <img class="logo" src="./assets /logo.svg" alt="">
+            <form name='loginForm' class="Login-form" action="">
+                <input id="mailLogin" type="text" name='mail' placeholder="Correo elecronico"> <br>
+                <input id="mailPassword" type="password" name="password" placeholder="Contraseña"> <br>
+                <button class="buttonLogin" type="submit">Entrar </button>
+            </form>
+
+        </div>
+    </div>
+    <!-- Show -->
+    <div class="mainShow">
+            <div class="sideBar">
+                    <button id='signOut'>Salir</button>
+                    <i id="operatoria" class="fas fa-tooth icon"></i>
+                    <i  id="ortho" class="far fa-grimace icon"></i>
+                    <i id="formButton" class="fas fa-save icon"></i>
+            </div>
+    <section class="formSection">
+
+
+    <div class="infoForm">
+        <h1>Formulario de ingreso de pacientes</h1>
+    </div>
+    <div class="formWrapper">
+
+        <form name="Form" id="Formulario" action="" method="post">
+            <input id="name" name="name" placeholder="Nombre" type="text"> <br>           
+            <input id="lastName" name="Lastname" placeholder="Apellidos" type="text"> <br>           
+            <input id="number" name="number" placeholder="Número " type="number"><br>           
+            <input id="exNumber" name="exNumber" placeholder="Número extra" type="number"><br>         
+            <input id="mail" name='mail' placeholder="Correo electrónico" type="text"> <br>           
+            <input id="id" name="id" placeholder="Número de cedula" type="number"> <br>    
+            <textarea rows="4" id="direction" placeholder="Dirección" name="direction" type="text"></textarea> <br>
+            <label for="">Paciente de:</label> <br>
+            <select name="es paciente de" id="type"> <br>
+                <option value="paciente de Ortodoncia">Ortodoncia</option>
+                <option value="paciente de operatoria">Operatoria</option>
+            </select> <br>
+            <p>*Recuerde seleccionar correctamente el tipo de paciente*</p>
+
+            <button type="submit"> Enviar </button>
+        </form>
+
+    </div>
+</section>
+<section id="listWrapper" class="listWrapper">
+    <h2>Lista de pacientes de operatoria</h2> 
+    <p>Para buscar: preciona CTLR + F</p>
+
+
+</section>
+<section id="listWrapperOrt" class="listWrapper">
+    <h2>Lista de pacientes de Ortodoncia</h2> 
+    <p>Para buscar: preciona CTLR + F</p>
+
+
+</section> 
+
+    </div>
+</main>
+        <script src="/__/firebase/6.4.2/firebase-app.js"></script>
+        <script src="/__/firebase/6.4.2/firebase-auth.js"></script>
+        <script src="/__/firebase/6.4.2/firebase-database.js"></script>
+        <script src="/__/firebase/6.4.2/firebase-messaging.js"></script>
+        <script src="/__/firebase/6.4.2/firebase-storage.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+            ////////////////////////////////
+            ////////////////////////////////
+            ////////////////////////////////
+            /////////Your Firebase Config///   
+            ////////////////////////////////
+            ////////////////////////////////
+            ////////////////////////////////
+            ////////////////////////////////
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+        </script>
+        <script src="./js/listData.js"></script>
+        <script src="./js/listDataOrt.js"></script>
+        <script src="./js/scripts.js"></script>
+
+
+
+</body>
+
+</html>
