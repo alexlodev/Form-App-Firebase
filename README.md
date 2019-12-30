@@ -20,3 +20,6 @@ Pass: 123456
 ### Note.
 This project is done with a test account, so you can do whatever you want haha🤓
 
+<p aling="center">
+<img src='https://i.ibb.co/BGP5f4c/foldertree.png' width='200' height='500' alt='folder tree img'>
+</p>
